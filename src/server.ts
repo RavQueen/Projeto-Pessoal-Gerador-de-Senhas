@@ -10,7 +10,6 @@ const PORT = 3000;
 server.use(helmet())
 server.use(express.json())
 
-// Routers
 server.use('/', indexRouter)
 server.use('/generate', generateRouter)
 server.use('/passwords', passwordsRouter)
